@@ -1,4 +1,4 @@
-django_staticimport
+django_staticimport [![Build Status](https://travis-ci.org/leoxnidas/django_staticimport.svg?branch=master)](https://travis-ci.org/leoxnidas/django_staticimport)
 -------------------
 
 Add static files never was so easy. This library allows you to include css, js and images files (static files) on a template faster than the old way.
