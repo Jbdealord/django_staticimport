@@ -27,7 +27,7 @@ setup(
     keywords=['django_staticimport', 'static_import', 'static files', 'static'],
     zip_safe=False,
     classifiers=[
-        'Development Status :: 0.0.1 - Production/Stable',
+        'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
         'Framework :: Django',
         'Intended Audience :: Developers',
