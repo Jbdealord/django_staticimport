@@ -1,0 +1,11 @@
+*.db
+*.pyc
+*.pyo
+*.swp
+
+venv/
+coverage/
+build/
+dist/
+*.egg-info/
+.idea/

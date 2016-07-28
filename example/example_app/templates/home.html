@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load staticimport %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hi</title>
+	<!-- css -->
+	{% import 'main.css' %}
+	{% import 'something.css' %}
+	{% import 'al.css' %}
+
+	<!-- js -->
+	{% import 'main.js' custom='async' %}
+</head>
+<body>
+	{% import 'image.jpg' css='image' id='image' custom='width="100px" height="100px" data-city="picture"' %}
+	<h1>hello world</h1>
+
+	<a href="#">cosas</a>
+</body>
+</html>

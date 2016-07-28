@@ -1,0 +1,10 @@
+Version 0.0.1 (July 27, 2016)
+-----------------------------
+
+	*  First commit.
+	*  Version 0.0.1.
+	*  Adding django library.
+	*  Adding travis support.
+	*  Adding Tox support.
+	*  Adding example.
+	*  Adding test
