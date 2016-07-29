@@ -50,11 +50,11 @@ HOSTED_LIBS = [
 	<!-- including js files with custom attributes -->
 	{% import 'angularjs' %}
 	{% import 'selectjs' %}
-	{% import 'main.js' custom='async' %}
+	{% import 'main.js' attrs='async' %}
 </head>
 <body>
 	<!-- including images -->
-	{% import 'image.jpg' css='image' id='image' custom='width="100px" height="100px" data-city="picture"' %}
+	{% import 'image.jpg' css='image' id='image' attrs='width="100px" height="100px" data-city="picture"' %}
 	<h1>hello world</h1>
 </body>
 </html>
