@@ -18,7 +18,7 @@ Add static files never was so easy. This library allows you to include css, js a
 Install
 -------
 
-pip install django-staticimport
+pip install django-staticimport or easy_install django-staticimport
 
 
 Usage.
@@ -27,7 +27,7 @@ Usage.
 ####Add the app to settings.
 
 ```python
-
+# installing the static_import application.
 INSTALLED_APPS = [
         .
         .
@@ -36,9 +36,16 @@ INSTALLED_APPS = [
     'static_import',
 ]
 
+# adding remote static file.
+HOSTED_LIBS = [
+    {
+        'name': 'selectjs',
+        'url': 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js'
+    },
+]
 ```
 
-####Then..
+####Then.. on the templates.
 
 ```html
 <!DOCTYPE html>
@@ -52,6 +59,8 @@ INSTALLED_APPS = [
     {% import 'something.css' %}
     
     <!-- including js files with custom attributes -->
+    {% import 'angularjs' %}
+    {% import 'selectjs' %}
     {% import 'main.js' custom='async' %}
 </head>
 <body>
@@ -61,6 +70,42 @@ INSTALLED_APPS = [
 </body>
 </html>
 ```
+
+Supported remote libraries
+--------------------------
+
+    * angularjs (lastest release)
+    * angular material (lastest release)
+    * dojo (lastest release)
+    * ext-core (lastest release)
+    * hammerjs (lastest release)
+    * jquery 3 (lastest release)
+    * jquery 2 (lastest release)
+    * jquery 1 (lastest release)
+    * jquery mobile (lastest release)
+    * jquery ui (lastest release)
+    * mootools (lastest release)
+    * prototype (lastest release)
+    * scriptaculous (lastest release)
+    * spf (lastest release)
+    * swfobject (lastest release)
+    * threejs (lastest release)
+    * webfont (lastest release)
+    * react (lastest release)
+    * react-dom-server (lastest release)
+    * react-dom (lastest release)
+    * react-with-addons (lastest release)
+    * materialize (lastest release)
+    * bootstrap (lastest release)
+    * bootstrap-theme (lastest release)
+    * bulma (lastest release)
+    * metro-UI (lastest release)
+    * metro-UI-responsive (lastest release)
+    * metro-UI-schemes (lastest release)
+    * metro-UI-rtl (lastest release)
+    * metro-UI-icons (lastest release)
+    * font-awesome (lastest release)
+    * select2 (lastest release)
 
 
 LICENSE
@@ -100,6 +145,7 @@ setup(
     name='django_staticimport',
     version=__version__,
     url='https://github.com/leoxnidas/django_staticimport',
+    download_url='https://github.com/leoxnidas/django_staticimport',
     license=__license__,
     description=short_description,
     long_description=long_description,
@@ -107,7 +153,8 @@ setup(
     author_email=__email__,
     packages=packages,
     package_data=package_data,
-    keywords=['django_staticimport', 'static_import', 'static files', 'static'],
+    keywords='django_staticimport static_import static files static django'],
+    platforms=['any'],
     zip_safe=False,
     classifiers=[
         'Development Status :: 5 - Production/Stable',
