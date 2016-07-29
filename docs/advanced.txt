@@ -1,0 +1,44 @@
+Basic django/angularjs project.
+
+
+your_project/settings.py
+
+INSTALLED_APPS = [
+
+    	.
+    	.
+    	.
+
+    'static_import',
+		
+		.
+		.
+		.
+]
+
+
+templates/home.html
+
+		.
+		.
+		.
+
+{% load staticimport %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hi</title>
+	{% import 'main.css' %}
+	{% import 'responsive.css' %}
+
+	{% import 'angularjs' %}
+	{% import 'angular_material' attrs="async" %} <!-- custom attributes <script ... async ></script> -->
+	{% import 'app.js' %}
+	{% import 'config.js' %}
+	{% import 'login_controller.js' %}
+	{% import 'dashboard_controller.js' %}
+</head>
+<body>
+	<h1>hello world</h1>
+</body>
+</html>

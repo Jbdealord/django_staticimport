@@ -1,0 +1,61 @@
+First of all, let start by install django-staticimport, pip install django-staticimport or easy_install django-staticimport.
+
+ready? nice...
+
+create a django project, then, go to settings.py file, and add static_import to INSTALLED_APPS list object:
+
+your_project/settings.py
+
+INSTALLED_APPS = [
+
+    	.
+    	.
+    	.
+
+    'static_import',
+		
+		.
+		.
+		.
+]
+
+ready? nice...
+
+now, optionaly, you can add custom remote javascript or css libraries, frameworks, ...  to static_import, how? 
+
+HOSTED_LIBS = [
+	{
+		'name': 'selectjs',
+		'url': 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js'
+	},
+]
+
+ready? nice..
+
+go to any html template, and on the top of it, you need to load the static_import templatetag, and then, you can start importing your current css or js files, or try to import remote js or css libraries or frameworks. How?
+
+
+templates/home.html
+
+		.
+		.
+		.
+
+{% load staticimport %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hi</title>
+	<!-- css -->
+	{% import 'main.css' %}
+
+	<!-- js -->
+	{% import 'main.js' attrs='async' %}
+</head>
+<body>
+	<h1>hello world</h1>
+</body>
+</html>
+
+
+the end =D.

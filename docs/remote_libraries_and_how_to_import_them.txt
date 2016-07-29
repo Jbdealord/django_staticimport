@@ -1,0 +1,40 @@
+you can import into your templates this libraries:
+
+1 - angularjs               --> {% import 'angularjs' %}
+2 - angular_material        --> {% import 'angular_material' %}
+3 - dojo                    --> {% import 'dojo' %}
+4 - ext-core                --> {% import 'ext-core' %}
+5 - hammerjs                --> {% import 'hammerjs' %}
+6 - jquery 3.1.0            --> {% import 'jquery3' %}
+7 - jquery 2.2.4            --> {% import 'jquery2' %}
+8 - jquery 1.12.4           --> {% import 'jquery1' %}
+9 - jquerymobile js         --> {% import 'jquerymobile_js' %}
+10- jquerymobile css        --> {% import 'jquerymobile_css' %}
+11- jqueryui js             --> {% import 'jqueryui_js' %}
+12- jqueryui css            --> {% import 'jqueryui_css' %}
+13- mootools                --> {% import 'mootools' %}
+14- prototype               --> {% import 'prototype' %}
+15- scriptaculous           --> {% import 'scriptaculous' %}
+16- spf                     --> {% import 'spf' %}
+17- swfobject               --> {% import 'swfobject' %}
+18- threejs                 --> {% import 'threejs' %}
+19- webfont                 --> {% import 'webfont' %}
+20- react                   --> {% import 'react' %}
+21- react-dom-server        --> {% import 'react-dom-server' %}
+22- react-dom               --> {% import 'react-dom' %}
+23- react-with-addons       --> {% import 'react-with-addons' %}
+24- materialize js          --> {% import 'materialize_js' %}
+25- materialize css         --> {% import 'materialize_css' %}
+26- bootstrap js            --> {% import 'bootstrap_js' %}
+27- bootstrap css           --> {% import 'bootstrap_css' %}
+28- bootstrap-theme         --> {% import 'bootstrap-theme' %}
+29- bulma                   --> {% import 'bulma' %}
+30- metro-UI css            --> {% import 'metro-UI-css' %}
+31- metro-UI-responsive css --> {% import 'metro-UI-responsive-css' %}
+32- metro-UI-schemes css    --> {% import 'metro-UI-schemes-css' %}
+33- metro-UI-rtl css        --> {% import 'metro-UI-rtl-css' %}
+34- metro-UI-icons css      --> {% import 'metro-UI-icons-css' %}
+35- metro-UI js             --> {% import 'metro-UI-js' %}
+36- font-awesome            --> {% import 'font-awesome' %}
+37- select2 css             --> {% import 'select2_css' %}
+38- select2 js              --> {% import 'select2_js' %}

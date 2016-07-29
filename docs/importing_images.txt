@@ -1,0 +1,41 @@
+Basic django/angularjs project.
+
+
+your_project/settings.py
+
+INSTALLED_APPS = [
+
+    	.
+    	.
+    	.
+
+    'static_import',
+		
+		.
+		.
+		.
+]
+
+
+templates/home.html
+
+		.
+		.
+		.
+
+{% load staticimport %}
+<html lang="en">
+<head>
+
+		.
+		.
+		.
+		.
+
+</head>
+<body>
+
+	<!-- Base image with css that represents class="image" id="image" ... -->
+	{% import 'image.jpg' css='image' id='image' attrs='width="100px" height="100px" data-city="picture"' %}
+</body>
+</html>
