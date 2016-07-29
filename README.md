@@ -26,14 +26,12 @@ INSTALLED_APPS = [
 ]
 
 # adding remote static file.
-HOSTED_LIBS = {
-    'libs': [
-        {
-            'name': 'selectjs',
-            'url': 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js'
-        },
-    ],
-}
+HOSTED_LIBS = [
+	{
+		'name': 'selectjs',
+		'url': 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js'
+	},
+]
 ```
 
 ####Then.. on the templates.
