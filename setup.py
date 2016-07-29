@@ -153,7 +153,7 @@ setup(
     author_email=__email__,
     packages=packages,
     package_data=package_data,
-    keywords='django_staticimport static_import static files static django'],
+    keywords='django_staticimport static_import static files static django',
     platforms=['any'],
     zip_safe=False,
     classifiers=[
