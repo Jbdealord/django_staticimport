@@ -2,9 +2,35 @@ Version 0.0.1 (July 27, 2016)
 -----------------------------
 
 	*  First commit.
-	*  Version 0.0.1.
 	*  Adding django library.
 	*  Adding travis support.
 	*  Adding Tox support.
 	*  Adding example.
 	*  Adding test
+
+
+Version 0.0.2 (July 27, 2016)
+-----------------------------
+
+	*  updating setup.py file, error when reading long description.
+	*  Deleting tox file.
+	*  Updating runtest.py file.
+	*  Updating .travis.yml file.
+
+
+Version 0.0.3 (July 27, 2016)
+-----------------------------
+
+	*  updating setup.py file, error when reading long description.
+	*  Updating .travis.yml file.
+
+
+Version 0.0.4 (July 28, 2016)
+-----------------------------
+
+	*  Adding support for remote javascript libraries as (angularjs, jquery, react, etc).
+	*  Adding is_remote and is_local variables to import.html file, to support remote libraries.
+	*  Adding settings.py files.
+	*  Updating README.md file.
+	*  Adding documentation.
+	*  Adding requirements folder.
