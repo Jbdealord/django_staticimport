@@ -1,7 +1,9 @@
 from django import template
 
 from static_import.base import (get_static_file as _gf,
-                                is_css, is_js, is_img)
+                                is_css, is_js, is_img,
+                                is_remote, is_local, 
+                                safe_extra_attrs)
 
 
 register = template.Library()
@@ -9,19 +11,18 @@ register = template.Library()
 
 @register.inclusion_tag('import.html', name='import')
 def _import(name, **attr):
-    _r = {
-        'filename': _gf(name),
-        'is_css': is_css(name),
-        'is_js': is_js(name),
-        'is_img': is_img(name)
+    fn, wt = _gf(name)
+
+    rs = {
+        'filename': fn,
+        'is_css': is_css(fn),
+        'is_js': is_js(fn),
+        'is_img': is_img(fn),
+        'is_local': is_local(wt),
+        'is_remote': is_remote(wt)
     }
 
     if len(attr) >= 1:
-        style = attr.get('style', None)
-        if style is not None:
-            style = style.replace('"', "'")
-            attr['style'] = style
+        rs.update(safe_extra_attrs(attr))
 
-        _r.update(attr)
-
-    return _r
+    return rs
