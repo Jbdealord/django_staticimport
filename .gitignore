@@ -2,6 +2,7 @@
 *.pyc
 *.pyo
 *.swp
+*.json
 
 venv/
 coverage/
@@ -11,3 +12,6 @@ dist/
 .idea/
 .cache/
 .pypirc
+bin/
+lib/
+include/
