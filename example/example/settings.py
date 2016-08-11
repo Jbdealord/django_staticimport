@@ -125,7 +125,7 @@ STATIC_URL = '/static/'
 
 HOSTED_LIBS = [
     {
-        'name': 'selectjs',
-        'url': 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js'
+        'name': 'kali',
+        'url': 'http://pre07.deviantart.net/58d1/th/pre/i/2015/223/4/8/kali_2_0_alternate_wallpaper_by_xxdigipxx-d95800s.png'
     },
 ]

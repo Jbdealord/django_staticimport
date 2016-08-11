@@ -1,3 +1,10 @@
+import os
+
+try:
+	from urllib.parse import urlparse
+except ImportError:
+	from urlparse import urlparse
+
 from django.conf import settings as USER_SETTINGS
 from django.core.exceptions import ImproperlyConfigured
 
@@ -158,10 +165,32 @@ HOSTED_LIBS = [
 ]
 
 
+def is_valid_url(url):
+	purl = urlparse(url)
+	if len(purl.scheme) and \
+	   len(purl.netloc) and \
+	   len(purl.path):
+		return True
+	return False
+
+
+def check_user_hosted_libs(libs):
+	for lib in libs:
+		if os.path.exists(lib['url']):
+			raise ImproperlyConfigured(\
+				"try not to use local static files at HOSTED_LIBS,"
+				" instead use STATICFILES_DIRS")
+
+		if not is_valid_url(lib['url']):
+			raise ImproperlyConfigured("try not to use an invalid url")
+
+
 def get_config():
 	user_hosted_libs = getattr(USER_SETTINGS, 'HOSTED_LIBS', [])
+	check_user_hosted_libs(user_hosted_libs)
 	if isinstance(user_hosted_libs, (list, tuple)):
 		HOSTED_LIBS.extend(user_hosted_libs)
 	else:
 		raise ImproperlyConfigured('Libs should be a list of tuple.')
 	return HOSTED_LIBS
+

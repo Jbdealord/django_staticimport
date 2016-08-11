@@ -6,16 +6,17 @@
 	<title>Hi</title>
 	<!-- css -->
 	{% import 'main.css' %}
-	{% import 'something.css' %}
+	{% import 'something.css'%}
 	{% import 'al.css' %}
 
 	<!-- js -->
-	{% import 'selectjs' %}
-	{% import 'main.js' attrs='async' %}
+	{% import 'main.js' id="data" attrs="data-js='primero'"%}
 </head>
 <body>
 	{% import 'image.jpg' css='image' id='image' attrs='width="100px" height="100px" data-city="picture"' %}
 	<h1>hello world</h1>
+
+	{% import 'kali' css='image' id='image' style='font-family: "sans";' attrs='width="100px" height="100px" data-city="picture"'%}
 
 	<a href="#">cosas</a>
 </body>
