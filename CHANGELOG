@@ -34,3 +34,11 @@ Version 0.0.4 (July 28, 2016)
 	*  Updating README.md file.
 	*  Adding documentation.
 	*  Adding requirements folder.
+
+
+Version 0.0.5 (August 10, 2016)
+-------------------------------
+
+	*  Added proper documentation.
+	*  Added validation to script, style, img tags.
+	*  Fixed error when user add a local static file to HOSTED_LIBS and try to import it to a template.
