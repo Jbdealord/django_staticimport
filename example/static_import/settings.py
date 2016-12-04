@@ -12,11 +12,15 @@ from django.core.exceptions import ImproperlyConfigured
 HOSTED_LIBS = [
 	{
 		'name': 'angularjs',
-		'url': 'https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js'
+		'url': 'https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js'
 	},
 	{
 		'name': 'angular_material',
-		'url': 'https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc.5/angular-material.min.js'
+		'url': 'http://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.js'
+	},
+	{
+		'name': 'angular_material_css',
+		'url': 'http://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.css'
 	},
 	{
 		'name': 'dojo',
@@ -52,11 +56,11 @@ HOSTED_LIBS = [
 	},
 	{
 		'name': 'jqueryui_js',
-		'url': 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'
+		'url': 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'
 	},
 	{
 		'name': 'jqueryui_css',
-		'url': 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css'
+		'url': 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css'
 	},
 	{
 		'name': 'mootools',
@@ -88,27 +92,27 @@ HOSTED_LIBS = [
 	},
 	{
 		'name': 'react',
-		'url': 'https://cdnjs.cloudflare.com/ajax/libs/react/15.2.1/react.min.js'
+		'url': 'https://cdnjs.cloudflare.com/ajax/libs/react/15.4.1/react.min.js'
 	},
 	{
 		'name': 'react-dom-server',
-		'url': 'https://cdnjs.cloudflare.com/ajax/libs/react/15.2.1/react-dom-server.min.js'
+		'url': 'https://cdnjs.cloudflare.com/ajax/libs/react/15.4.1/react-dom-server.min.js'
 	},
 	{
 		'name': 'react-dom',
-		'url': 'https://cdnjs.cloudflare.com/ajax/libs/react/15.2.1/react-dom.min.js'
+		'url': 'https://cdnjs.cloudflare.com/ajax/libs/react/15.4.1/react-dom.min.js'
 	},
 	{
 		'name': 'react-with-addons',
-		'url': 'https://cdnjs.cloudflare.com/ajax/libs/react/15.2.1/react-with-addons.min.js'
+		'url': 'https://cdnjs.cloudflare.com/ajax/libs/react/15.4.1/react-with-addons.min.js'
 	},
 	{
 		'name': 'materialize_js',
-		'url': 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js'
+		'url': 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js'
 	},
 	{
 		'name': 'materialize_css',
-		'url': 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css'
+		'url': 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css'
 	},
 	{
 		'name': 'bootstrap_js',
@@ -119,12 +123,12 @@ HOSTED_LIBS = [
 		'url': 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'
 	},
 	{
-		'name': 'bootstrap-theme',
+		'name': 'bootstrap_css_theme',
 		'url': 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css'
 	},
 	{
 		'name': 'bulma',
-		'url': 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.0/css/bulma.min.css'
+		'url': 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.min.css'
 	},
 	{
         'name': 'metro-UI-css',
@@ -152,7 +156,7 @@ HOSTED_LIBS = [
 	},
 	{
 		'name': 'font-awesome',
-		'url': 'https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css'
+		'url': 'https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css'
 	},
 	{
 		'name': 'select2_css',
