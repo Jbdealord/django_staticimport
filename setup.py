@@ -8,7 +8,7 @@ packages = find_packages()
 package_data = { 'static_import': ['templates/*'] }
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
-long_description = open(os.path.join(os.path.dirname(__file__), "README.md", "r")).read()
+long_description = open(os.path.join(os.path.dirname(__file__), "README.md"), "r").read()
 
 
 setup(
@@ -36,7 +36,7 @@ setup(
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
-        'Topic :: Utilities',
+        'Topic :: Software Development :: Libraries',
         'Topic :: Software Development :: Libraries :: Python Modules',
     ]
 )
