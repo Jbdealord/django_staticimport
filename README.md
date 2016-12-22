@@ -99,7 +99,7 @@ Supported remote libraries
 LICENSE
 -------
 
-Copyright (c) 2016 Leonardo Esparis and individual contributors.
+Copyright (c) 2016-2017 Leonardo Esparis and individual contributors.
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification,
