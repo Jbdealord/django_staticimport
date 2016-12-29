@@ -3,6 +3,7 @@
 *.pyo
 *.swp
 *.json
+*.save
 
 venv/
 coverage/
