@@ -63,7 +63,7 @@ HOSTED_LIBS = [
 </html>
 ```
 
-also you could downlaod static files with new django command, called
+####also you could downlaod static files with new django command, called
 ```python manage.py download_static_file angularjs https://cdnjs.cloudflare.com/ajax/libs/1140/2.0/1140.min.css```
 
 Supported remote libraries
