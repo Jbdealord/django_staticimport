@@ -7,7 +7,11 @@ Add static files never was so easy. This library allows you to include css, js a
 Install
 -------
 
-pip install django-staticimport or easy_install django-staticimport
+```pip install django-staticimport```
+
+or
+
+```easy_install django-staticimport```
 
 
 Usage.
@@ -59,6 +63,9 @@ HOSTED_LIBS = [
 </html>
 ```
 
+also you could downlaod static files with new django command, called
+```python manage.py download_static_file angularjs https://cdnjs.cloudflare.com/ajax/libs/1140/2.0/1140.min.css```
+
 Supported remote libraries
 --------------------------
 
@@ -72,6 +79,7 @@ Supported remote libraries
 	* jquery 1 (lastest release)
 	* jquery mobile (lastest release)
 	* jquery ui (lastest release)
+	* jquery color (lastest release)
 	* mootools (lastest release)
 	* prototype (lastest release)
 	* scriptaculous (lastest release)
@@ -79,6 +87,9 @@ Supported remote libraries
 	* swfobject (lastest release)
 	* threejs (lastest release)
 	* webfont (lastest release)
+	* stringjs (lastest release)
+	* zooming (lastest release)
+	* angular qrcode (lastest release)
 	* react (lastest release)
 	* react-dom-server (lastest release)
 	* react-dom (lastest release)
