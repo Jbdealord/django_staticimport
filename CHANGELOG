@@ -42,3 +42,17 @@ Version 0.0.5 (August 10, 2016)
 	*  Added proper documentation.
 	*  Added validation to script, style, img tags.
 	*  Fixed error when user add a local static file to HOSTED_LIBS and try to import it to a template.
+
+
+Version 0.0.6 (November 3, 2016)
+--------------------------------
+
+    * update static libraries
+
+
+Version 0.0.7 (December 29, 2016)
+--------------------------------
+
+    * adding django command download_static_file
+    * update static libraries
+    * update README.md file
