@@ -54,7 +54,8 @@ Version 0.0.8 (January 5, 2017)
 -------------------------------
 * fixing 'FileNotFoundError: [Errno 2] No such file or directory' when downloading.
 * adding MANIFEST.in
-* update file AUTHORS to AUTHORS.md
+* update setup.cfg file
+* update AUTHORS to AUTHORS.md
 * update LICENSE to LICENSE.md
 * update CHANGELOG to CHANGELOG.md
 * deleting __init__.py file
