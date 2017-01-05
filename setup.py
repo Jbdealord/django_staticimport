@@ -1,14 +1,23 @@
 import os
+import io
 
-from static_import import __version__, __email__, __owner__, __license__
+from static_import import (
+    __version__, __email__, __owner__, __license__)
 from setuptools import find_packages, setup
+
+
+def _read(filename):
+    content = ''
+    with io.open(filename) as f:
+        content = f.read()
+    return content
 
 short_description = 'Add static files never was so easy.'
 packages = find_packages()
 package_data = { 'static_import': ['templates/*'] }
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
-long_description = open(os.path.join(os.path.dirname(__file__), "README.md"), "r").read()
+long_description = _read(os.path.join(current_dir, "README.rst"))
 
 
 setup(
